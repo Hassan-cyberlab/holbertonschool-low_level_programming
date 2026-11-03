@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+* main - This where the magic begins
+*
+* Description: this will print the size of various types
+* Return: This will return 0
+ */
 int main(void)
 {
 printf("Size of a char: %u byte(s)\n", sizeof(char));
