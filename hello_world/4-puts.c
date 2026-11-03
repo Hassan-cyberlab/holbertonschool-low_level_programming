@@ -1,8 +1,14 @@
 #include <stdio.h>
 
-int main(void) {
-    const char * value = "Programming is like building a multilingual puzzle\0";
-    puts(value);
-    return 0;
+/**
+ * main - Prints a line of text using puts
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	const char *value = "\"Programming is like building a multilingual puzzle";
 
+	puts(value);
+	return (0);
 }
