@@ -12,10 +12,6 @@ int main(void)
 
 	int low_z = 122;
 
-	int cap_a = 65;
-
-	int cap_z = 90;
-
 	int newline = 10;
 
 	for ( ; low_a <= low_z ; low_a++)
