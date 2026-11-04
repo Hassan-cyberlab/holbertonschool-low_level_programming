@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/**
+* main - random number
+*
+* description: this will create a random number everytime
+* Return: the return value is 0
+ */
+int main(void)
+{
+	int a = 97;
+
+	int end = 122;
+
+	int newline = 10;
+
+	for (end = 122; end >= a ; end--)
+	{
+		putchar(end);
+	}
+	putchar(newline);
+	return (0);
+}
