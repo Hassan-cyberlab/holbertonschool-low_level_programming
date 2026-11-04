@@ -16,15 +16,15 @@ int main(void)
 
 	int space = 32;
 
-	for (begin = 48; begin <= 57; begin++)
+	for (begin = 48; begin <= 57 ; begin++)
+	{
+		putchar(begin);
+		if (begin < 57)
 		{
-			putchar(begin);
-			if (begin < 57)
-			{
-				putchar(comma);
-				putchar(space);
-			}
+			putchar(comma);
+			putchar(space);
 		}
+	}
 	putchar(newline);
 	return (0);
 }
