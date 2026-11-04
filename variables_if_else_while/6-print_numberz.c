@@ -8,15 +8,15 @@
  */
 int main(void)
 {
-	int number_1 = 49;
+	int number_0 = 48;
 
 	int number_9 = 57;
 
 	int newline = 10;
 
-	for (number_1 = 49; number_1 <= number_9 ; number_1++)
+	for (number_0 = 48; number_0 <= number_9 ; number_0++)
 	{
-		putchar(number_1);
+		putchar(number_0);
 	}
 
 
