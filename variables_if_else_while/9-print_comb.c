@@ -19,8 +19,11 @@ int main(void)
 	for (begin = 48; begin <= 57; begin++)
 		{
 			putchar(begin);
-			putchar(comma);
-			putchar(space);
+			if (begin < 57)
+			{
+				putchar(comma);
+				putchar(space);
+			}
 		}
 	putchar(newline);
 	return (0);
