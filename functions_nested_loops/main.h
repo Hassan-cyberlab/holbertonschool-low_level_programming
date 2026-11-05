@@ -11,3 +11,13 @@ int my_putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+void print_alphabet(void)
+{
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		my_putchar(c);
+	}
+	my_putchar('\n');
+}
