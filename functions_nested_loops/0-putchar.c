@@ -1,4 +1,3 @@
-#include "_putchar.c"
 #include "main.c"
 /**
  * main - using _putchar for printing
