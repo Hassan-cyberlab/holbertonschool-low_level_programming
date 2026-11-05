@@ -1,4 +1,4 @@
-#include <unistd>
+#include "main.c"
 
 /**
  * print_alphabet - prints the alphabets
