@@ -1,38 +1,22 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: the string
- *
- * Return: length of the string
- */
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}
-
-/**
- * half - prints a string starting from its middle
+ * puts_half - prints the second half of a string, followed by a new line
  * @str: the string to print
  *
- * Description: if the length is odd, printing starts one character later
+ * Description: if the length is odd, prints the last (length + 1) / 2
+ * characters
  */
-void half(char *str)
+void puts_half(char *str)
 {
-	int len = _strlen(str);
-	int i = len / 2;
+	int len = 0;
+	int i;
 
-	if (len % 2 == 1)
-		i++;
+	while (str[len] != '\0')
+		len++;
 
-	while (i < len)
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	write(1, "\n", 1);
+	for (i = len / 2; i < len; i++)
+		_putchar(str[i]);
+
+	_putchar('\n');
 }
