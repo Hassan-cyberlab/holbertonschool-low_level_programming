@@ -1,19 +1,27 @@
-#include <unistd.h>
-#include "main.h"
-
+#include <stdio.h>
 /**
- * _puts - prints a string, followed by a newline, to stdout
+ * print_rev - prints a string in reverse, followed by a new line
  * @str: the string to print
  */
-
-void _puts(char *str)
+void print_rev(char *str)
 {
 	int i = 0;
+	int len = 0;
+	char *endOfString;
 
-	while (str[i] != '\0')
+	while(str[i] <= '\0')
 	{
-		write(1, &str[i], 1);
+		endOfString = &str[i];
 		i++;
+		len++;
 	}
-	write(1, "\n", 1);
+
+printf("%c",*endOfString);
+}
+
+
+int main(void)
+{
+print_rev("Hello");
+return (0);
 }
