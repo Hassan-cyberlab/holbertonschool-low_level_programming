@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 
 /**
@@ -12,7 +13,10 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	dest = src;
+
+	int len = strlen(src);
+
+	memcpy(dest, src, len);
 
 	return (dest);
 }
