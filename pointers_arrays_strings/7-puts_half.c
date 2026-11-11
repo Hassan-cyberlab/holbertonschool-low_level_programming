@@ -15,7 +15,7 @@ void puts_half(char *str)
 	while (str[len] != '\0')
 		len++;
 
-	for (i = len / 2; i < len; i++)
+	for (i = (len + 1) / 2; i < len; i++)
 		write(1, &str[i], 1);
 
 	write(1, "\n", 1);
