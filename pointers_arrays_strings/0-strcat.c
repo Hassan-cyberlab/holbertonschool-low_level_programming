@@ -1,5 +1,26 @@
-#include <string.h>
 #include "main.h"
+
+/**
+* _strlen - length of string
+*
+* @s: string
+* Description: printing string's length
+* Return: the length of the string as integer
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+	{
+
+		len++;
+
+	}
+
+	return (len);
+}
 
 /**
 * _strcat - copy a string to a dest
@@ -16,7 +37,8 @@ char *_strcat(char *dest, char *src)
 
 	int i = 0;
 
-	int dest_end = strlen(dest);
+	int dest_end = _strlen(dest);
+
 
 	while (src[i] != '\0')
 	{
