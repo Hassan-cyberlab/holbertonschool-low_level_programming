@@ -54,7 +54,7 @@ int divide(int a, int b)
 }
 
 /**
- * main - simple calculator
+ * main - simple calculator, shows the menu until the user quits
  *
  * Return: Always 0 (Success)
  */
@@ -63,37 +63,40 @@ int main(void)
 	int choice = -1;
 	int num1, num2;
 
-	printf("Simple Calculator\n1) Add\n2) Subtract\n3) Multiply\n"
-		"4) Divide\n0) Quit\n");
-	scanf("%d", &choice);
-	switch (choice)
+	while (choice != 0)
 	{
-	case 0:
-		printf("Choice: %d\nBye!\n", choice);
-		break;
-	case 1:
-		printf("Choice: %d\nChoose 2 numbers to add them\n", choice);
-		scanf("%i %i", &num1, &num2);
-		printf("Result is %i\n", sum(num1, num2));
-		break;
-	case 2:
-		printf("Choice: %d\nChoose 2 numbers to subtract them\n", choice);
-		scanf("%i %i", &num1, &num2);
-		printf("Result is %i\n", sub(num1, num2));
-		break;
-	case 3:
-		printf("Choice: %d\nChoose 2 numbers to multiply them\n", choice);
-		scanf("%i %i", &num1, &num2);
-		printf("Result is %i\n", mul(num1, num2));
-		break;
-	case 4:
-		printf("Choice: %d\nChoose 2 numbers to divide them\n", choice);
-		scanf("%i %i", &num1, &num2);
-		printf("Result is %i\n", divide(num1, num2));
-		break;
-	default:
-		printf("Invalid choice\n");
-		break;
+		printf("\nSimple Calculator\n1) Add\n2) Subtract\n3) Multiply\n"
+			"4) Divide\n0) Quit\n");
+		if (scanf("%d", &choice) != 1)
+			break;
+		switch (choice)
+		{
+		case 0:
+			printf("Choice: %d\nBye!\n", choice);
+			break;
+		case 1:
+			printf("Choice: %d\nChoose 2 numbers to add them\n", choice);
+			scanf("%i %i", &num1, &num2);
+			printf("Result is %i\n", sum(num1, num2));
+			break;
+		case 2:
+			printf("Choice: %d\nChoose 2 numbers to subtract them\n", choice);
+			scanf("%i %i", &num1, &num2);
+			printf("Result is %i\n", sub(num1, num2));
+			break;
+		case 3:
+			printf("Choice: %d\nChoose 2 numbers to multiply them\n", choice);
+			scanf("%i %i", &num1, &num2);
+			printf("Result is %i\n", mul(num1, num2));
+			break;
+		case 4:
+			printf("Choice: %d\nChoose 2 numbers to divide them\n", choice);
+			scanf("%i %i", &num1, &num2);
+			printf("Result is %i\n", divide(num1, num2));
+			break;
+		default:
+			printf("Invalid choice\n");
+		}
 	}
 	return (0);
 }
