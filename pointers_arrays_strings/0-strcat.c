@@ -24,7 +24,7 @@ int _strlen(char *s)
 
 
 /**
-* _strcat - copy a string to a dest
+* _strncat - copy an n string to a dest
 *
 * @dest: string destination
 * @src: source of the string
@@ -33,7 +33,7 @@ int _strlen(char *s)
 * Return: pointer to the coppied string
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 
 	int i = 0;
@@ -41,7 +41,7 @@ char *_strcat(char *dest, char *src)
 	int dest_end = _strlen(dest);
 
 
-	while (src[i] != '\0')
+	while (i < n && src[i] != '\0')
 	{
 
 		dest[dest_end] = src[i];

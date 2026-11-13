@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* _strcpy - copy a string to a dest
+* _strcpy: copy a string to a dest
 *
 * @dest: string destination
 * @src: source of the string
