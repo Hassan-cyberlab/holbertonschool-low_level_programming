@@ -37,20 +37,20 @@ int mul(int a, int b)
 }
 
 /**
- * divide - divides two integers
+ * divide - divides two integers and prints the outcome
  * @a: dividend
  * @b: divisor
  *
- * Return: the quotient of a and b, or -1 if b is 0
+ * Description: prints an error if b is 0, otherwise prints a / b
  */
-int divide(int a, int b)
+void divide(int a, int b)
 {
 	if (b == 0)
 	{
-		printf("Division by zero is invalid\n");
-		return (-1);
+		printf("Error: division by zero\n");
+		return;
 	}
-	return (a / b);
+	printf("Result: %g\n", (double)a / b);
 }
 
 /**
@@ -91,7 +91,7 @@ int main(void)
 				printf("Result: %i\n", mul(num1, num2));
 				break;
 			default:
-				printf("Result: %i\n", divide(num1, num2));
+				divide(num1, num2);
 			}
 		}
 	}
