@@ -28,7 +28,7 @@ int _strlen(char *s)
 *
 * @dest: string destination
 * @src: source of the string
-*
+* @n: stops at n characters
 * Description: copy a source in a source to a destination
 * Return: pointer to the coppied string
  */
