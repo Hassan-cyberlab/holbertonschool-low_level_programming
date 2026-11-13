@@ -6,3 +6,4 @@ char *_strcpy(char *dest, char *stc);
 int _atoi(char *s);
 char *_strcat(char *dest, char *src);
 int _strlen(char *str);
+void reverse_array(int *a, int n);
