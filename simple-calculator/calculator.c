@@ -60,8 +60,7 @@ int divide(int a, int b)
  */
 int main(void)
 {
-	int choice = -1;
-	int num1, num2;
+	int choice = -1, num1, num2;
 
 	while (choice != 0)
 	{
@@ -75,9 +74,11 @@ int main(void)
 			printf("Choice: %d\nBye!\n", choice);
 			break;
 		case 1:
-			printf("Choice: %d\nChoose 2 numbers to add them\n", choice);
-			scanf("%i %i", &num1, &num2);
-			printf("Result is %i\n", sum(num1, num2));
+			printf("Choice: %d\nA: ", choice);
+			scanf("%i", &num1);
+			printf("B: ");
+			scanf("%i", &num2);
+			printf("Result: %i\n", sum(num1, num2));
 			break;
 		case 2:
 			printf("Choice: %d\nChoose 2 numbers to subtract them\n", choice);
