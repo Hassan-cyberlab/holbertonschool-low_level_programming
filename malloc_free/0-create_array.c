@@ -23,18 +23,20 @@ char *create_array(unsigned int size, char c)
 
 	s = malloc(sizeof(*s) * size);
 
-	while (i < size)
-	{
-		s[i] = c;
-		i++;
-	}
-
 	if (s == NULL)
 	{
 
 		return (NULL);
 
 	}
+
+
+	while (i < size)
+	{
+		s[i] = c;
+		i++;
+	}
+
 
 	return (s);
 }
