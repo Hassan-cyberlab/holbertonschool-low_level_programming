@@ -3,8 +3,8 @@
 
 /**
 * create_array - Creating An Array
-* @unsigned int: size
-* @char: characters
+* @size: size of the array
+* @c: characters of the array
 * Description: a funciton creates a an array based on size
 * Return: an array
  */
@@ -15,9 +15,9 @@ char *create_array(unsigned int size, char c)
 
 	unsigned int i = 0;
 
-	if(size == 0)
+	if (size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 
@@ -29,12 +29,12 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	if(s == NULL)
+	if (s == NULL)
 	{
 
 		return (NULL);
 
 	}
 
-	return s;
+	return (s);
 }
