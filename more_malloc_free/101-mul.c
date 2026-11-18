@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * _strlen - gets the length of a string
+ * str_len - gets the length of a string
  * @s: the string
  *
  * Return: the length
  */
-int _strlen(char *s)
+int str_len(char *s)
 {
 	int len = 0;
 
@@ -130,8 +130,8 @@ int main(int argc, char *argv[])
 		print_error();
 	if (!is_number(argv[1]) || !is_number(argv[2]))
 		print_error();
-	len1 = _strlen(argv[1]);
-	len2 = _strlen(argv[2]);
+	len1 = str_len(argv[1]);
+	len2 = str_len(argv[2]);
 	res = multiply(argv[1], argv[2], len1, len2);
 	print_result(res, len1 + len2);
 	free(res);

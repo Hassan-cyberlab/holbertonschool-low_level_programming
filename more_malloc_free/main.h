@@ -9,3 +9,4 @@ int is_number(char *s);
 void print_error(void);
 int *multiply(char *n1, char *n2, int len1, int len2);
 void print_result(int *res, int size);
+int str_len(char *s);
